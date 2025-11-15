@@ -1,4 +1,4 @@
-import { Mail, Phone, Calendar, ArrowRight } from 'lucide-react';
+import { Mail, Phone, ArrowRight } from 'lucide-react';
 
 export default function CTA() {
   return (
@@ -6,11 +6,12 @@ export default function CTA() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            まずは無料相談から
+            今すぐ学びを始めましょう
           </h2>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            お気軽にお問い合わせください。<br />
-            カリキュラムや助成金について詳しくご説明いたします
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            STUDIO Q クリエイター総合塾は、人材開発支援助成金の対象となっており、<br />
+            助成金を活用することで受講料が75%OFFになります。<br />
+            さらに、スキルアップにより人件費の削減も期待できます。
           </p>
         </div>
 
@@ -26,7 +27,8 @@ export default function CTA() {
                     </div>
                     <div>
                       <div className="font-semibold text-gray-900 mb-1">電話でのお問い合わせ</div>
-                      <div className="text-gray-600">平日 9:00-18:00</div>
+                      <div className="text-gray-600">TEL: 06-6978-8122</div>
+                      <div className="text-gray-600 text-sm">FAX: 06-6978-8123</div>
                     </div>
                   </div>
 
@@ -35,18 +37,10 @@ export default function CTA() {
                       <Mail className="text-white" size={24} />
                     </div>
                     <div>
-                      <div className="font-semibold text-gray-900 mb-1">メールでのお問い合わせ</div>
-                      <div className="text-gray-600">24時間受付</div>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Calendar className="text-white" size={24} />
-                    </div>
-                    <div>
-                      <div className="font-semibold text-gray-900 mb-1">オンライン説明会</div>
-                      <div className="text-gray-600">毎週開催中</div>
+                      <div className="font-semibold text-gray-900 mb-1">所在地</div>
+                      <div className="text-gray-600 text-sm">〒556-0003</div>
+                      <div className="text-gray-600 text-sm">大阪市浪速区恵美須西3-2-4 2階</div>
+                      <div className="text-gray-600 text-sm">Studio Q内</div>
                     </div>
                   </div>
                 </div>

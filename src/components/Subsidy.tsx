@@ -36,11 +36,69 @@ export default function Subsidy() {
             助成金活用で受講料が戻ってきます
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            人材開発支援助成金
+            本講座の特徴
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            労働時間内に受講した場合、受講料の75%が助成されます
-          </p>
+        </div>
+
+        {/* 約1ヶ月で20項目の講座を習得できます */}
+        <div className="bg-white p-8 md:p-12 rounded-2xl shadow-lg mb-12">
+          <h3 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+            約1ヶ月で20項目の講座を習得できます。
+          </h3>
+          <div className="max-w-4xl mx-auto space-y-4 text-gray-700 leading-relaxed">
+            <p>
+              生成AIとAIエージェントの活用法をわずか1ヶ月で効率よく学べる講座——それが本講座の最大の魅力です。
+            </p>
+            <p>
+              約20項目にわたる実践的なスキルを体系的に学ぶことができ、すぐに業務に活かせる"即戦力"としての力が身につきます。
+            </p>
+            <p>
+              いまや市場は日々変化し、求められるスキルも進化しています。そんな時代において、AIを使いこなせる人材は、どの業界でも重宝される存在になるでしょう。
+            </p>
+            <p className="font-semibold text-lg text-blue-600">
+              「今、AIを学ぶかどうかで、5年後のあなたの立ち位置が大きく変わる」——これは決して大げさな話ではありません。
+            </p>
+            <p>
+              未来の人材育成に投資するなら、今この瞬間がチャンスです。
+            </p>
+          </div>
+        </div>
+
+        {/* 補助金を活用すれば75%相当が補助されます */}
+        <div className="bg-gradient-to-br from-blue-50 to-green-50 p-8 md:p-12 rounded-2xl shadow-lg mb-12">
+          <h3 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+            補助金を活用すれば75%相当が補助されます。
+          </h3>
+          <div className="max-w-4xl mx-auto space-y-4 text-gray-700 leading-relaxed mb-8">
+            <p>
+              本講座は、人材開発支援助成金（事業開発等リスキリング支援コース）の申請すると、助成を得られる可能性があります。
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 my-8">
+              <div className="bg-white p-6 rounded-xl shadow">
+                <h4 className="font-bold text-xl text-blue-600 mb-3">経費助成</h4>
+                <p className="text-gray-700">
+                  受講料（税込）の<span className="text-2xl font-bold text-blue-600">75％</span>（中小企業）<br />
+                  <span className="text-2xl font-bold text-green-600">60％</span>（大企業）
+                </p>
+              </div>
+              <div className="bg-white p-6 rounded-xl shadow">
+                <h4 className="font-bold text-xl text-green-600 mb-3">賃金助成</h4>
+                <p className="text-gray-700">
+                  一人当たり<span className="text-2xl font-bold text-green-600">1000円/時間</span>（中小企業）<br />
+                  <span className="text-2xl font-bold text-blue-600">500円/時間</span>（大企業）
+                </p>
+              </div>
+            </div>
+            <p>
+              煩雑な手続きもサポートいたしますので、受講の際は安心して申請をお考えください。
+            </p>
+            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mt-6">
+              <p className="text-sm text-gray-700">
+                ※1 雇用保険適用事業所の社員が対象です。<br />
+                ※2 受講開始は申請の1ヶ月後です。
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 mb-16">

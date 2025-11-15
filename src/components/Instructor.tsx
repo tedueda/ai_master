@@ -1,4 +1,4 @@
-import { Award, Code, Briefcase, GraduationCap } from 'lucide-react';
+import { Award, Code, GraduationCap } from 'lucide-react';
 
 export default function Instructor() {
   return (
@@ -6,11 +6,8 @@ export default function Instructor() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            経験豊富な講師陣
+            講師紹介と講座について
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            現場経験豊富なプロフェッショナルが直接指導
-          </p>
         </div>
 
         <div className="max-w-5xl mx-auto">
@@ -23,62 +20,38 @@ export default function Instructor() {
               </div>
               <div className="md:col-span-2">
                 <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                  スタジオQ 代表講師
+                  スタジオQクリエイター総合塾講師 上田孝久
                 </h3>
-                <p className="text-gray-700 mb-6 leading-relaxed text-lg">
-                  20年以上のWeb制作・デジタルマーケティング経験を持ち、
-                  数百社のデジタル化支援を実施。最新のAI技術を駆使した
-                  効率的な制作手法を確立し、実践的な指導を行っています。
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  大阪府出身。高校卒業後、アメリカ・カリフォルニア州のPacific Union Collegeにて経営管理の学士号を取得し卒業。
                 </p>
-                <div className="grid grid-cols-2 gap-4">
-                  <div className="flex items-center space-x-3">
-                    <Briefcase className="text-blue-600" size={24} />
-                    <div>
-                      <div className="font-semibold text-gray-900">実績</div>
-                      <div className="text-sm text-gray-600">500社以上の支援</div>
-                    </div>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Code className="text-green-600" size={24} />
-                    <div>
-                      <div className="font-semibold text-gray-900">専門分野</div>
-                      <div className="text-sm text-gray-600">AI × Web制作</div>
-                    </div>
-                  </div>
-                </div>
+                <p className="text-gray-700 mb-6 leading-relaxed">
+                  1995年より株式会社船井総合研究所に５年間在籍し、親戚である船井幸雄の元で５年間あらゆるビジネスを学ぶ。
+                </p>
               </div>
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 mt-12">
-            <div className="bg-white p-8 rounded-xl border-2 border-blue-200 hover:shadow-lg transition-all">
-              <Award className="text-blue-600 mb-4" size={40} />
-              <h4 className="text-xl font-bold text-gray-900 mb-3">豊富な実務経験</h4>
-              <p className="text-gray-600 leading-relaxed">
-                大手企業から中小企業まで、幅広い業種でのWeb制作・
-                マーケティング支援の実績があります。実務で培った
-                ノウハウを惜しみなく伝授します。
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl border-2 border-green-200 hover:shadow-lg transition-all">
-              <Code className="text-green-600 mb-4" size={40} />
-              <h4 className="text-xl font-bold text-gray-900 mb-3">最新技術への精通</h4>
-              <p className="text-gray-600 leading-relaxed">
-                ChatGPT、生成AI、AIエージェントなど最新のAI技術を
-                いち早く導入し、効率的な制作フローを確立。
-                常に最新の情報を提供します。
-              </p>
-            </div>
-          </div>
-
-          <div className="mt-12 bg-gradient-to-r from-blue-600 to-green-600 p-8 rounded-xl text-white text-center">
-            <h4 className="text-2xl font-bold mb-3">個別サポート体制</h4>
-            <p className="text-lg text-white/90 max-w-2xl mx-auto">
-              受講生一人ひとりのレベルや目標に合わせた
-              きめ細かい指導を行います。疑問点はいつでも質問できる
-              サポート環境を整えています。
-            </p>
+          <div className="mt-12 bg-white p-8 rounded-xl border-2 border-blue-200 shadow-lg">
+            <h4 className="text-2xl font-bold text-gray-900 mb-6 text-center">講座について</h4>
+            <ul className="space-y-4 text-gray-700 max-w-3xl mx-auto">
+              <li className="flex items-start space-x-3">
+                <Award className="text-blue-600 flex-shrink-0 mt-1" size={24} />
+                <span>この講座は約1ヶ月で学んで頂けます。</span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <Code className="text-green-600 flex-shrink-0 mt-1" size={24} />
+                <span>約20項目（約15時間）のカリキュラムをeラーニング形式と同時双方向で習得できる内容になっております。</span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <Award className="text-blue-600 flex-shrink-0 mt-1" size={24} />
+                <span>「人材開発支援助成金」の対象になっており、労働時間内に視聴した場合、受講料の約75％が助成されます。</span>
+              </li>
+              <li className="flex items-start space-x-3">
+                <Code className="text-green-600 flex-shrink-0 mt-1" size={24} />
+                <span>Zoomでの同時双方向学習を行なった場合、１時間あたり1000円の賃金助成も受けられます。（※労働時間内で受講できるスケジュールを提出する必要があります）</span>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

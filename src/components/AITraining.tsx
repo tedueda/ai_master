@@ -1,29 +1,23 @@
-import { Bot, MessageSquare, Lightbulb, Workflow } from 'lucide-react';
+import { MessageSquare, Code, TrendingUp } from 'lucide-react';
 
 const aiSkills = [
   {
     icon: MessageSquare,
-    title: 'ChatGPT活用術',
-    description: 'プロンプトエンジニアリングの基礎から応用まで、効果的なAI活用法を習得',
-    items: ['プロンプト設計', '業務効率化', 'コンテンツ生成']
+    title: 'ChatGPT・生成AIの活用法',
+    description: 'ChatGPTを使いこなすには、ちょっとした"コツ"があります。専用の講座でそのスキルを身につければ、AIから最適な回答を引き出すことができ、業務の効率化がぐんと進みます。',
+    items: ['営業活動サポート', 'プレゼン資料作成', 'チラシデザイン', '社員教育動画制作']
   },
   {
-    icon: Bot,
-    title: '生成AI実践',
-    description: '画像・動画・音声など、多様な生成AIツールを業務に活用するスキル',
-    items: ['画像生成AI', '動画編集AI', '音声合成AI']
+    icon: Code,
+    title: 'WEB制作',
+    description: '今では、AIエージェントを使えば、誰でも簡単にホームページが作れる時代です。大切なのは、「優れたAIエージェントを選ぶこと」と「適切に使いこなすこと」。',
+    items: ['WEB制作の基本', 'AIへの指示出し', '魅力的なサイト制作']
   },
   {
-    icon: Workflow,
-    title: 'AIエージェント',
-    description: 'AI エージェントを構築し、業務プロセスを自動化・最適化する手法',
-    items: ['自動化設計', 'ワークフロー構築', 'API連携']
-  },
-  {
-    icon: Lightbulb,
-    title: 'AI戦略立案',
-    description: 'ビジネスにAIを導入するための戦略的思考と実装計画の立て方',
-    items: ['ROI分析', '導入計画', '効果測定']
+    icon: TrendingUp,
+    title: 'SEO対策',
+    description: 'AI検索の登場により、これまでのSEO対策は大きく様変わりしました。今や、ブログ記事の作成やキーワード選定、ホームページの最適化まで、AIに任せることで検索順位が劇的に向上します。',
+    items: ['ブログ記事作成', 'キーワード選定', 'サイト最適化', 'アクセス数向上']
   }
 ];
 
@@ -36,15 +30,15 @@ export default function AITraining() {
             Core Program
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            AI活用術マスタープログラム
+            ビジネスの新しい世界を広げる最適なステップ
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            ChatGPT、生成AI、AIエージェントを駆使して、<br />
-            業務効率を飛躍的に向上させる実践スキルを習得
+            これらのコンテンツを学ぶことで業務効率の改善はさることながら、<br />
+            企業の収益を大幅に向上させることができます
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {aiSkills.map((skill, index) => {
             const Icon = skill.icon;
             return (
@@ -52,28 +46,24 @@ export default function AITraining() {
                 key={index}
                 className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
               >
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-600 to-green-600 rounded-xl flex items-center justify-center">
-                    <Icon size={32} className="text-white" />
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                      {skill.title}
-                    </h3>
-                    <p className="text-gray-600 mb-4 leading-relaxed">
-                      {skill.description}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                      {skill.items.map((item, idx) => (
-                        <span
-                          key={idx}
-                          className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium"
-                        >
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-600 to-green-600 rounded-xl flex items-center justify-center mb-6">
+                  <Icon size={32} className="text-white" />
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  {skill.title}
+                </h3>
+                <p className="text-gray-600 mb-4 leading-relaxed">
+                  {skill.description}
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {skill.items.map((item, idx) => (
+                    <span
+                      key={idx}
+                      className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium"
+                    >
+                      {item}
+                    </span>
+                  ))}
                 </div>
               </div>
             );
