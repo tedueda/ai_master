@@ -16,8 +16,8 @@ function App() {
       <Features />
       <AITraining />
       <Curriculum />
-      <Subsidy />
       <Instructor />
+      <Subsidy />
       <CTA />
       <Footer />
     </div>

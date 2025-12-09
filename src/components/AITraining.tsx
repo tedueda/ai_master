@@ -1,104 +1,142 @@
-import { MessageSquare, Code, TrendingUp } from 'lucide-react';
-
-const aiSkills = [
-  {
-    icon: MessageSquare,
-    title: 'ChatGPT・生成AIの活用法',
-    description: 'ChatGPTを使いこなすには、ちょっとした"コツ"があります。専用の講座でそのスキルを身につければ、AIから最適な回答を引き出すことができ、業務の効率化がぐんと進みます。',
-    items: ['営業活動サポート', 'プレゼン資料作成', 'チラシデザイン', '社員教育動画制作']
-  },
-  {
-    icon: Code,
-    title: 'WEB制作',
-    description: '今では、AIエージェントを使えば、誰でも簡単にホームページが作れる時代です。大切なのは、「優れたAIエージェントを選ぶこと」と「適切に使いこなすこと」。',
-    items: ['WEB制作の基本', 'AIへの指示出し', '魅力的なサイト制作']
-  },
-  {
-    icon: TrendingUp,
-    title: 'SEO対策',
-    description: 'AI検索の登場により、これまでのSEO対策は大きく様変わりしました。今や、ブログ記事の作成やキーワード選定、ホームページの最適化まで、AIに任せることで検索順位が劇的に向上します。',
-    items: ['ブログ記事作成', 'キーワード選定', 'サイト最適化', 'アクセス数向上']
-  }
-];
-
 export default function AITraining() {
   return (
-    <section id="ai-training" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-green-50">
+    <section id="ai-training" className="pt-12 md:pt-20 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-green-50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <div className="inline-block bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
-            Core Program
+        <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16">
+          <div className="text-left">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
+              ビジネスの新しい世界を広げる最適なステップ
+            </h2>
+            <p className="text-base md:text-lg lg:text-xl text-gray-600">
+              これらのコンテンツを学ぶことで、業務効率の改善はさることながら、企業の収益を大幅に向上させることができます。<br />
+              さらにAIの進化は日々加速しており、社会の多様性にも柔軟に対応できるため、今すぐに身近な存在にすることが何よりも大切な事なのです。<br />
+              これにより、貴社の未来に計り知れない利益と資産をもたらすことが期待できます。
+            </p>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            ビジネスの新しい世界を広げる最適なステップ
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            これらのコンテンツを学ぶことで業務効率の改善はさることながら、<br />
-            企業の収益を大幅に向上させることができます
-          </p>
+          <div className="flex justify-center">
+            <img 
+              src="../images/business_ai.png" 
+              alt="Business AI" 
+              className="rounded-2xl shadow-2xl animate-fade-in-scale"
+            />
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {aiSkills.map((skill, index) => {
-            const Icon = skill.icon;
-            return (
-              <div
-                key={index}
-                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
-              >
-                <div className="flex-shrink-0 w-16 h-16 bg-gradient-to-br from-blue-600 to-green-600 rounded-xl flex items-center justify-center mb-6">
-                  <Icon size={32} className="text-white" />
+        {/* 新しいセクション: なぜ今"AIを使いこなす力"が必要なのか */}
+        <div 
+          className="relative rounded-3xl shadow-2xl overflow-hidden"
+          style={{
+            backgroundImage: 'url(../images/hero01.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        >
+          {/* オーバーレイ */}
+          <div className="absolute inset-0 bg-black/40"></div>
+          
+          {/* コンテンツ */}
+          <div className="relative z-10 p-8 md:p-12">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              {/* 左カラム: テキスト（白地背景） */}
+              <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl">
+                <div className="mb-4 md:mb-6">
+                  <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 md:mb-4 leading-tight">
+                    なぜ今"AIを使いこなす力"が必要なのか
+                  </h3>
+                  <p className="text-lg md:text-xl text-blue-600 font-semibold">
+                    AIが情報収集・企画・制作・自動化を担う時代へ
+                  </p>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                  {skill.title}
-                </h3>
-                <p className="text-gray-600 mb-4 leading-relaxed">
-                  {skill.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {skill.items.map((item, idx) => (
-                    <span
-                      key={idx}
-                      className="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm font-medium"
-                    >
-                      {item}
-                    </span>
-                  ))}
+
+                <div className="space-y-2 md:space-y-3">
+                  <div className="flex items-start gap-2 md:gap-3">
+                    <span className="text-xl md:text-2xl flex-shrink-0">✅</span>
+                    <p className="text-sm md:text-base text-gray-700 leading-relaxed">
+                      AI利用者でなく、<span className="font-bold text-blue-600">「AIを自在に操る人」</span>が求められている
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl flex-shrink-0">✅</span>
+                    <p className="text-base text-gray-700 leading-relaxed">
+                      作業の9割はAIが担当、人は判断と創造に集中
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl flex-shrink-0">✅</span>
+                    <p className="text-base text-gray-700 leading-relaxed">
+                      生産性は3倍以上に上昇
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl flex-shrink-0">✅</span>
+                    <p className="text-base text-gray-700 leading-relaxed">
+                      AIの回答にビジネスチャンスのヒントが満載
+                    </p>
+                  </div>
+
+                  <div className="flex items-start gap-3">
+                    <span className="text-2xl flex-shrink-0">✅</span>
+                    <p className="text-base text-gray-700 leading-relaxed">
+                      アイデア次第で新規事業の立ち上げも可能に‼️
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-4 md:mt-6 p-4 md:p-6 bg-gradient-to-r from-blue-600 to-green-600 rounded-xl">
+                  <p className="text-base md:text-lg lg:text-xl font-bold text-white leading-relaxed text-center">
+                    "AIを使いこなす側"に回った人から、<br className="hidden md:inline" />チャンスを掴んでいます。
+                  </p>
                 </div>
               </div>
-            );
-          })}
+
+              {/* 右カラム: 空白（背景画像を見せる） */}
+              <div className="hidden md:block"></div>
+            </div>
+          </div>
         </div>
 
-        <div className="mt-16 bg-gradient-to-br from-blue-600 to-green-600 p-8 md:p-12 rounded-2xl shadow-lg text-white">
-          <h3 className="text-3xl font-bold mb-6 text-center">ビジネスの新しい世界を広げる最適なステップ</h3>
-          <div className="max-w-3xl mx-auto mb-8">
-            <p className="text-lg leading-relaxed mb-4">
-              これらのコンテンツを学ぶことで、業務効率の改善はさることながら、
-              企業の収益を大幅に向上させることができます。
-            </p>
-            <p className="text-lg leading-relaxed mb-4">
-              さらにAIの進化は日々加速しており、社会の多様性にも柔軟に
-              対応できるため、今すぐに身近な存在にすることが何よりも
-              大切な事なのです。
-            </p>
-            <p className="text-lg leading-relaxed font-semibold">
-              これにより、貴社の未来に計り知れない利益と資産を
-              もたらすことが期待できます。
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
-              <div className="text-4xl font-bold mb-2">実践型</div>
-              <p className="text-white/90">すぐに使える実務スキル</p>
+        {/* こんな企業が取り組んでいます */}
+        <div className="mt-12 md:mt-16 bg-white rounded-2xl shadow-xl p-6 md:p-8 lg:p-12">
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 md:mb-8 text-left md:text-center">
+            こんな企業が取り組んでいます
+          </h3>
+          <div className="max-w-5xl mx-auto">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {[
+                '飲食業',
+                '製造業',
+                '保育事業',
+                '宝石卸業',
+                '医療機器メーカー',
+                '食品販売業',
+                '不動産業',
+                '介護事業',
+                '福祉事業',
+                '衛生事業',
+                '弁護士事務所',
+                '税理士事務所',
+                '小売業',
+                '運送業',
+                '通信販売業',
+                '教育事業'
+              ].map((industry, index) => (
+                <div
+                  key={index}
+                  className="bg-gradient-to-br from-blue-50 to-green-50 rounded-xl p-4 text-center shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1 opacity-0 animate-fade-in-up"
+                  style={{
+                    animationDelay: `${index * 0.1}s`,
+                    animationFillMode: 'forwards'
+                  }}
+                >
+                  <p className="text-gray-800 font-semibold">{industry}</p>
+                </div>
+              ))}
             </div>
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
-              <div className="text-4xl font-bold mb-2">最新技術</div>
-              <p className="text-white/90">常にアップデートされる教材</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl">
-              <div className="text-4xl font-bold mb-2">個別指導</div>
-              <p className="text-white/90">マンツーマンサポート</p>
+            <div className="mt-6 text-center">
+              <p className="text-gray-600 font-medium">ほか多数</p>
             </div>
           </div>
         </div>

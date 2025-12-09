@@ -28,27 +28,28 @@ export default function Footer() {
               </div>
             </div>
             <div className="bg-gray-800 p-4 rounded-lg">
-              <div className="text-sm font-semibold text-white mb-2">運営会社</div>
-              <div className="text-sm text-gray-400 mb-1">Global Insurance Co., Ltd.</div>
+              <div className="text-sm text-gray-400 mb-1">運営会社：グローバルインシュアランス株式会社</div>
+              <div className="text-sm text-gray-400 mb-1">TEL 06-6765-0011 FAX 06-6765-0016</div>
             </div>
           </div>
 
           <div>
             <h4 className="text-white font-semibold mb-4">リンク</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-blue-400 transition-colors">top</a></li>
-              <li><a href="https://all.studioq.co.jp/blogs/" className="hover:text-blue-400 transition-colors">最新情報</a></li>
-              <li><a href="https://global-insu.com/" className="hover:text-blue-400 transition-colors">運営会社</a></li>
-              <li><a href="https://studioq.co.jp" className="hover:text-blue-400 transition-colors">スタジオQ</a></li>
+              <li><a href="/" className="hover:text-blue-400 transition-colors">top</a></li>
+              <li><a href="/blog" className="hover:text-blue-400 transition-colors">最新情報</a></li>
+              <li><a href="/demo" className="hover:text-blue-400 transition-colors">デモ動画</a></li>
+              <li><a href="https://global-insu.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">運営会社</a></li>
+              <li><a href="https://studioq.co.jp" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">スタジオQ</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-semibold mb-4">その他</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="https://pr.studioq.co.jp/" className="hover:text-blue-400 transition-colors">AIマスター講座</a></li>
-              <li><a href="https://all.studioq.co.jp/privacy-policy/" className="hover:text-blue-400 transition-colors">プライバシーポリシー</a></li>
-              <li><a href="#contact" className="hover:text-blue-400 transition-colors">お問い合わせ</a></li>
+              <li><a href="/tokusho" className="hover:text-blue-400 transition-colors">特定商取引法</a></li>
+              <li><a href="/privacy-policy" className="hover:text-blue-400 transition-colors">プライバシーポリシー</a></li>
+              <li><a href="/#contact" className="hover:text-blue-400 transition-colors">お問い合わせ</a></li>
             </ul>
           </div>
         </div>
