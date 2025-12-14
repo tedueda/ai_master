@@ -38,7 +38,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm">
               <li><a href="/" className="hover:text-blue-400 transition-colors">top</a></li>
               <li><a href="/blog" className="hover:text-blue-400 transition-colors">最新情報</a></li>
-              <li><a href="/demo" className="hover:text-blue-400 transition-colors">デモ動画</a></li>
+              <li><a href="/demo-2" className="hover:text-blue-400 transition-colors">デモ動画</a></li>
               <li><a href="https://global-insu.com/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">運営会社</a></li>
               <li><a href="https://studioq.co.jp" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition-colors">スタジオQ</a></li>
             </ul>

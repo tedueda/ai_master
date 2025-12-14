@@ -62,7 +62,7 @@ export default function Features() {
       <div className="max-w-7xl mx-auto">
         {/* デモ動画セクション */}
         <div className="mb-12 md:mb-16 flex justify-center">
-          <a href="/demo" className="block group">
+          <a href="/demo-2" className="block group">
             <div className="relative overflow-hidden rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300" style={{ width: '760px', height: '300px' }}>
               <img 
                 src="/images/demo04.png" 

@@ -69,7 +69,8 @@ export default function Curriculum() {
       <div className="max-w-7xl mx-auto">
         <div className="text-left md:text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-            これだけのプログラムを体系的に学べる講座は他にありません。
+            この講座でAIの全てが学べます。<br />
+            それにより貴社のビジネスが大きく変わります。
           </h2>
           <p className="text-lg md:text-xl text-gray-600">
             1講座平均30分 × 全20講座。<br />

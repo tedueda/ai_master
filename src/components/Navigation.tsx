@@ -18,7 +18,7 @@ export default function Navigation() {
             <a href="/#features" className="text-gray-700 hover:text-blue-600 transition-colors">特徴</a>
             <a href="/#ai-training" className="text-gray-700 hover:text-blue-600 transition-colors">AI活用術</a>
             <a href="/#curriculum" className="text-gray-700 hover:text-blue-600 transition-colors">カリキュラム</a>
-            <a href="/demo" className="text-gray-700 hover:text-blue-600 transition-colors">デモ動画</a>
+            <a href="/demo-2" className="text-gray-700 hover:text-blue-600 transition-colors">デモ動画</a>
             <a href="/#subsidy" className="text-gray-700 hover:text-blue-600 transition-colors">助成金</a>
             <a href="/#instructor" className="text-gray-700 hover:text-blue-600 transition-colors">講師紹介</a>
             <a href="/#contact" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
@@ -41,7 +41,7 @@ export default function Navigation() {
             <a href="/#features" className="block py-2 text-gray-700 hover:text-blue-600">特徴</a>
             <a href="/#ai-training" className="block py-2 text-gray-700 hover:text-blue-600">AI活用術</a>
             <a href="/#curriculum" className="block py-2 text-gray-700 hover:text-blue-600">カリキュラム</a>
-            <a href="/demo" className="block py-2 text-gray-700 hover:text-blue-600">デモ動画</a>
+            <a href="/demo-2" className="block py-2 text-gray-700 hover:text-blue-600">デモ動画</a>
             <a href="/#subsidy" className="block py-2 text-gray-700 hover:text-blue-600">助成金</a>
             <a href="/#instructor" className="block py-2 text-gray-700 hover:text-blue-600">講師紹介</a>
             <a href="/#contact" className="block bg-blue-600 text-white px-6 py-3 rounded-lg text-center hover:bg-blue-700">
