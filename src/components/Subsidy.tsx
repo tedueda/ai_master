@@ -6,7 +6,7 @@ export default function Subsidy() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-5xl font-bold text-gray-900 mb-4">
-            講座について
+            補助金対応AI研修（法人向け）
           </h2>
         </div>
 

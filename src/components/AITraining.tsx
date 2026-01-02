@@ -5,7 +5,7 @@ export default function AITraining() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16">
           <div className="text-left">
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              ビジネスの新しい世界を広げる最適なステップ
+              ChatGPTを活用した業務効率化
             </h2>
             <p className="text-base md:text-lg lg:text-xl text-gray-600">
               これらのコンテンツを学ぶことで、業務効率の改善はさることながら、企業の収益を大幅に向上させることができます。<br />
@@ -41,10 +41,10 @@ export default function AITraining() {
               <div className="bg-white/95 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-xl">
                 <div className="mb-4 md:mb-6">
                   <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 md:mb-4 leading-tight">
-                    なぜ今"AIを使いこなす力"が必要なのか
+                    社内AI内製化・導入支援
                   </h3>
                   <p className="text-lg md:text-xl text-blue-600 font-semibold">
-                    AIが情報収集・企画・制作・自動化を担う時代へ
+                    企業のDX推進を実現するAI人材育成プログラム
                   </p>
                 </div>
 
@@ -101,7 +101,7 @@ export default function AITraining() {
         {/* こんな企業が取り組んでいます */}
         <div className="mt-12 md:mt-16 bg-white rounded-2xl shadow-xl p-6 md:p-8 lg:p-12">
           <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 md:mb-8 text-left md:text-center">
-            こんな企業が取り組んでいます
+            導入事例・活用シーン（BtoB）
           </h3>
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">

@@ -69,12 +69,11 @@ export default function Curriculum() {
       <div className="max-w-7xl mx-auto">
         <div className="text-left md:text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
-            この講座でAIの全てが学べます。<br />
-            それにより貴社のビジネスが大きく変わります。
+            職種別・役職別AI研修プログラム
           </h2>
           <p className="text-lg md:text-xl text-gray-600">
-            1講座平均30分 × 全20講座。<br />
-            最短10〜20日で修了できる効率的な構成です。
+            企業の実務に即したカリキュラム。全20講座で社内AI人材を育成。<br />
+            最短10〜20日で修了できる効率的な法人向けプログラムです。
           </p>
         </div>
 

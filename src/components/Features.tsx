@@ -84,7 +84,7 @@ export default function Features() {
         {/* タイトル */}
         <div className="text-left md:text-center mb-12">
           <h2 className="text-2xl md:text-4xl font-bold text-gray-900">
-            AIなくしては企業の発展は見込めません
+            法人向けAI研修・生成AI研修
           </h2>
         </div>
 

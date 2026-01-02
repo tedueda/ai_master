@@ -9,17 +9,17 @@ export default function Hero() {
           <div className="text-left">
             <div className="inline-flex items-center space-x-2 bg-blue-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-full mb-6 md:mb-8">
               <Sparkles size={20} className="md:w-6 md:h-6 flex-shrink-0" />
-              <span className="text-sm md:text-base lg:text-lg font-medium">専門知識は不要。未経験でも成果を出せるAI活用術</span>
+              <span className="text-sm md:text-base lg:text-lg font-medium">法人向けAI研修・DX人材育成プログラム</span>
             </div>
 
             <h1 className="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-6 md:mb-8 leading-tight md:leading-relaxed">
-              「AIを使う」から<br />
-              <span className="text-white md:text-blue-600">「AIを使いこなす」</span>時代へ
+              企業向けAI研修・<br />
+              <span className="text-white md:text-blue-600">生成AI実務活用プログラム</span>
             </h1>
 
             <h2 className="text-sm md:text-lg lg:text-2xl text-gray-700 mb-8 md:mb-10 leading-relaxed md:leading-loose font-semibold w-[64%] md:w-[70%] lg:w-auto">
-              ChatGPT・生成AI・AIエージェントを自在に操つり、<br className="hidden lg:block" />
-              生産性の向上と収益の大幅な改善を実現
+              ChatGPTを活用した業務効率化・社内AI内製化を実現。<br className="hidden lg:block" />
+              補助金対応で企業のDX推進を全面支援
             </h2>
 
             <div className="flex flex-col sm:flex-row gap-4 items-start">
