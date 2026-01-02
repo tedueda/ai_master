@@ -30,6 +30,15 @@
     <meta name="robots" content="index, follow" />
   </head>
   <body>
+    <!-- Netlify Forms検出用の静的フォーム（非表示） -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+      <input type="text" name="zoom_date" />
+      <textarea name="message"></textarea>
+    </form>
+    
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
