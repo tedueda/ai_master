@@ -6,3 +6,8 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Netlify Forms設定
+[forms]
+  # フォーム送信通知先メールアドレス
+  # Netlifyダッシュボードで追加設定が必要です

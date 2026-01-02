@@ -5,36 +5,15 @@ export default function CTA() {
   const [agreed, setAgreed] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     if (!agreed) {
+      e.preventDefault();
       alert('プライバシーポリシーに同意してください。');
       return;
     }
-
-    setIsSubmitting(true);
-
-    const formData = new FormData(e.currentTarget);
     
-    try {
-      const response = await fetch('/contact.php', {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (response.ok) {
-        alert('お問い合わせを送信しました。ありがとうございます。');
-        e.currentTarget.reset();
-        setAgreed(false);
-      } else {
-        alert('送信に失敗しました。もう一度お試しください。');
-      }
-    } catch (error) {
-      alert('送信エラーが発生しました。もう一度お試しください。');
-    } finally {
-      setIsSubmitting(false);
-    }
+    setIsSubmitting(true);
+    // Netlify Formsが自動的に処理するため、フォーム送信を続行
   };
 
   return (
@@ -96,7 +75,21 @@ export default function CTA() {
 
               <div className="p-6 md:p-8 lg:p-12 bg-white">
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6">お問い合わせフォーム</h3>
-                <form className="space-y-4" onSubmit={handleSubmit}>
+                <form 
+                  name="contact" 
+                  method="POST" 
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  action="/thanks"
+                  className="space-y-4" 
+                  onSubmit={handleSubmit}
+                >
+                  <input type="hidden" name="form-name" value="contact" />
+                  <div style={{ display: 'none' }}>
+                    <label>
+                      Don't fill this out if you're human: <input name="bot-field" />
+                    </label>
+                  </div>
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       お名前 <span className="text-red-500">*</span>
