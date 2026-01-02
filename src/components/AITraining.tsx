@@ -5,7 +5,7 @@ export default function AITraining() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16">
           <div className="text-left">
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-              ChatGPTを活用した業務効率化
+              生成AI (ChatGPT・Gemini)を活用した業務効率の改善
             </h2>
             <p className="text-base md:text-lg lg:text-xl text-gray-600">
               これらのコンテンツを学ぶことで、業務効率の改善はさることながら、企業の収益を大幅に向上させることができます。<br />
