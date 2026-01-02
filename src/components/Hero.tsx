@@ -18,8 +18,8 @@ export default function Hero() {
             </h1>
 
             <h2 className="text-sm md:text-lg lg:text-2xl text-gray-700 mb-8 md:mb-10 leading-relaxed md:leading-loose font-semibold w-[64%] md:w-[70%] lg:w-auto">
-              ChatGPTを活用した業務効率化・社内AI内製化を実現。<br className="hidden lg:block" />
-              補助金対応で企業のDX推進を全面支援
+              生成AI・AIエージェントを活用した社内のDX化を推進する人材を育成します。<br className="hidden lg:block" />
+              AIを活用して業務効率の改善、収益の向上にお役立てください。補助金対象のオンラインスクールです。
             </h2>
 
             <div className="flex flex-col sm:flex-row gap-4 items-start">
