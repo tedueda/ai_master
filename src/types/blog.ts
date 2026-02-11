@@ -7,4 +7,5 @@ export interface BlogPost {
   image: string;
   slug: string;
   videoId?: string;
+  vimeoUrl?: string;
 }
