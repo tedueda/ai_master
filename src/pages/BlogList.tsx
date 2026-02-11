@@ -23,11 +23,13 @@ export default function BlogList() {
                 to={`/blog/${post.slug}`}
                 className="group bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
               >
-                <div className="aspect-video overflow-hidden">
+                <div className="aspect-video overflow-hidden bg-gray-100">
                   <img
-                    src={post.videoId 
+                    src={post.image 
+                      ? post.image
+                      : post.videoId 
                       ? `https://img.youtube.com/vi/${post.videoId}/maxresdefault.jpg`
-                      : post.image
+                      : '/images/default-blog.png'
                     }
                     alt={post.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
