@@ -14,10 +14,10 @@ createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<Demo />} />
+        <Route path="/home" element={<App />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
-        <Route path="/demo-2" element={<Demo />} />
         <Route path="/tokusho" element={<Tokusho />} />
         <Route path="/privacy-policy" element={<Privacy />} />
         <Route path="/thanks" element={<Thanks />} />

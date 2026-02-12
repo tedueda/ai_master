@@ -9,20 +9,20 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <a href="/" className="text-lg md:text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
+            <a href="/home" className="text-lg md:text-2xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
               STUDIO Q <span className="text-blue-600 block sm:inline">クリエイター総合塾</span>
             </a>
           </div>
 
           <div className="hidden lg:flex items-center space-x-8">
-            <a href="/#features" className="text-gray-700 hover:text-blue-600 transition-colors">特徴</a>
-            <a href="/#ai-training" className="text-gray-700 hover:text-blue-600 transition-colors">AI活用術</a>
-            <a href="/#curriculum" className="text-gray-700 hover:text-blue-600 transition-colors">カリキュラム</a>
-            <a href="/demo-2" className="text-gray-700 hover:text-blue-600 transition-colors">デモ動画</a>
-            <a href="/#subsidy" className="text-gray-700 hover:text-blue-600 transition-colors">助成金</a>
-            <a href="/#instructor" className="text-gray-700 hover:text-blue-600 transition-colors">講師紹介</a>
+            <a href="/home#features" className="text-gray-700 hover:text-blue-600 transition-colors">特徴</a>
+            <a href="/home#ai-training" className="text-gray-700 hover:text-blue-600 transition-colors">AI活用術</a>
+            <a href="/home#curriculum" className="text-gray-700 hover:text-blue-600 transition-colors">カリキュラム</a>
+            <a href="/" className="text-gray-700 hover:text-blue-600 transition-colors">デモ動画</a>
+            <a href="/home#subsidy" className="text-gray-700 hover:text-blue-600 transition-colors">助成金</a>
+            <a href="/home#instructor" className="text-gray-700 hover:text-blue-600 transition-colors">講師紹介</a>
             <a href="/blog" className="text-gray-700 hover:text-blue-600 transition-colors">ブログ</a>
-            <a href="/#contact" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
+            <a href="/home#contact" className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
               お問い合わせ
             </a>
           </div>
@@ -39,14 +39,14 @@ export default function Navigation() {
       {isOpen && (
         <div className="lg:hidden bg-white border-t border-gray-100">
           <div className="px-4 py-4 space-y-3">
-            <a href="/#features" className="block py-2 text-gray-700 hover:text-blue-600">特徴</a>
-            <a href="/#ai-training" className="block py-2 text-gray-700 hover:text-blue-600">AI活用術</a>
-            <a href="/#curriculum" className="block py-2 text-gray-700 hover:text-blue-600">カリキュラム</a>
-            <a href="/demo-2" className="block py-2 text-gray-700 hover:text-blue-600">デモ動画</a>
-            <a href="/#subsidy" className="block py-2 text-gray-700 hover:text-blue-600">助成金</a>
-            <a href="/#instructor" className="block py-2 text-gray-700 hover:text-blue-600">講師紹介</a>
+            <a href="/home#features" className="block py-2 text-gray-700 hover:text-blue-600">特徴</a>
+            <a href="/home#ai-training" className="block py-2 text-gray-700 hover:text-blue-600">AI活用術</a>
+            <a href="/home#curriculum" className="block py-2 text-gray-700 hover:text-blue-600">カリキュラム</a>
+            <a href="/" className="block py-2 text-gray-700 hover:text-blue-600">デモ動画</a>
+            <a href="/home#subsidy" className="block py-2 text-gray-700 hover:text-blue-600">助成金</a>
+            <a href="/home#instructor" className="block py-2 text-gray-700 hover:text-blue-600">講師紹介</a>
             <a href="/blog" className="block py-2 text-gray-700 hover:text-blue-600">ブログ</a>
-            <a href="/#contact" className="block bg-blue-600 text-white px-6 py-3 rounded-lg text-center hover:bg-blue-700">
+            <a href="/home#contact" className="block bg-blue-600 text-white px-6 py-3 rounded-lg text-center hover:bg-blue-700">
               お問い合わせ
             </a>
           </div>
