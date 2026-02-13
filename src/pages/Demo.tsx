@@ -20,7 +20,7 @@ export default function Demo() {
     {
       id: 3,
       title: 'デモ３ ChatGPT・Gemini',
-      videoUrl: 'https://youtu.be/BQUh-lfgSZw',
+      videoUrl: 'https://youtu.be/v_LRi62pIe0',
     },
   ];
 
