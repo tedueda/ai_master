@@ -10,17 +10,17 @@ export default function Demo() {
     {
       id: 1,
       title: 'デモ１ AIエージェント',
-      videoUrl: 'https://vimeo.com/1162980629/0f6829d721',
+      videoUrl: 'https://youtu.be/VYHuZi6bdtU',
     },
     {
       id: 2,
       title: 'デモ2 生成AI',
-      videoUrl: 'https://vimeo.com/1162367868/b1e3960dea',
+      videoUrl: 'https://youtu.be/rFETkMUQs-o',
     },
     {
       id: 3,
       title: 'デモ３ ChatGPT・Gemini',
-      videoUrl: 'https://vimeo.com/1161266126/85fc6a01a6',
+      videoUrl: 'https://youtu.be/BQUh-lfgSZw',
     },
   ];
 
@@ -61,9 +61,11 @@ export default function Demo() {
               {/* 動画プレビュー */}
               <div className="relative aspect-video bg-black">
                 <iframe
-                  src={`https://player.vimeo.com/video/${demo.videoUrl.split('/')[3]}?h=${demo.videoUrl.split('/')[4]}`}
+                  src={`https://www.youtube.com/embed/${demo.videoUrl.includes('youtu.be') ? demo.videoUrl.split('/').pop()?.split('?')[0] : demo.videoUrl.split('v=')[1]?.split('&')[0]}`}
                   className="w-full h-full pointer-events-none"
                   frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
                   title={demo.title}
                 ></iframe>
               </div>
@@ -120,10 +122,10 @@ export default function Demo() {
             {/* 動画 */}
             <div className="relative flex-1 sm:flex-none sm:aspect-video bg-black rounded-lg overflow-hidden">
               <iframe
-                src={`https://player.vimeo.com/video/${selectedDemoData.videoUrl.split('/')[3]}?h=${selectedDemoData.videoUrl.split('/')[4]}&autoplay=1`}
+                src={`https://www.youtube.com/embed/${selectedDemoData.videoUrl.includes('youtu.be') ? selectedDemoData.videoUrl.split('/').pop()?.split('?')[0] : selectedDemoData.videoUrl.split('v=')[1]?.split('&')[0]}?autoplay=1`}
                 className="w-full h-full"
                 frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 title={selectedDemoData.title}
               ></iframe>
